@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="accordion-box w-11/12 max-w-lg mx-auto rounded-lg border border-gray-300 bg-white">
+        <div class="accordion-item bg-white">
+            <div class="accordion-title bg-sky-200 flex items-center justify-between p-4 cursor-pointer" id="accordion-1">
+                <span>Accordion #1</span>
+                <span class="text-xl transition duration-300 transform">^</span>
+            </div>
+            <div id="accordion-content-1" class="accordion-content p-4">
+                This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.
+            </div>
+        </div>
+        <div class="accordion-item bg-white">
+            <div class="accordion-title flex items-center justify-between p-4 cursor-pointer collapsed" id="accordion-2">
+                <span>Accordion #2</span>
+                <span class="text-xl transition duration-300 transform">^</span>
+            </div>
+            <div id="accordion-content-2" class="accordion-content p-4 hidden">
+            </div>
+        </div>
+        <div class="accordion-item bg-white">
+            <div class="accordion-title flex items-center justify-between p-4 cursor-pointer collapsed" id="accordion-3">
+                <span>Accordion #3</span>
+                <span class="text-xl transition duration-300 transform">^</span>
+            </div>
+            <div id="accordion-content-3" class="accordion-content p-4 hidden">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
